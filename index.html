@@ -8,15 +8,26 @@
 </head>
 <body>
 
+  <!-- BUY MODAL -->
+  <div class="modal-overlay" id="buyModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeBuyModal()">&#x2715;</button>
+      <div class="buy-icon">&#x1F6D2;</div>
+      <h2>Купить подписку</h2>
+      <p class="modal-sub">Напишите разработчику в Telegram для оформления покупки</p>
+      <a href="https://t.me/Baza2000ultrapro" target="_blank" class="btn-primary modal-btn">Написать @Baza2000ultrapro</a>
+    </div>
+  </div>
+
   <!-- LOGIN MODAL -->
   <div class="modal-overlay" id="loginModal">
     <div class="modal">
-      <button class="modal-close" onclick="closeModal()">✕</button>
+      <button class="modal-close" onclick="closeModal()">&#x2715;</button>
       <h2>Войти</h2>
       <p class="modal-sub">Введите данные аккаунта</p>
       <input type="text" placeholder="Логин" class="modal-input" />
       <input type="password" placeholder="Пароль" class="modal-input" />
-      <button class="btn-primary modal-btn">Войти ↗</button>
+      <button class="btn-primary modal-btn">Войти &#x2197;</button>
     </div>
   </div>
 
@@ -32,17 +43,17 @@
         <a href="#pricing">Цены</a>
         <a href="#support">Поддержка</a>
       </div>
-      <button class="btn-login" onclick="openModal()">Войти ↗</button>
+      <button class="btn-login" onclick="openModal()">Войти &#x2197;</button>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
-      <h1><span class="accent">Baza DLC</span> — выбор победителей</h1>
+    <div class="hero-content reveal">
+      <h1><span class="accent">Baza DLC</span> &mdash; выбор победителей</h1>
       <p>Мощный клиент для уверенной игры и стабильного результата на серверах Minecraft.</p>
       <div class="hero-btns">
-        <button class="btn-primary" onclick="openModal()">Войти ↗</button>
+        <button class="btn-primary" onclick="openModal()">Войти &#x2197;</button>
         <a href="#support" class="btn-ghost">Поддержка</a>
       </div>
     </div>
@@ -51,21 +62,21 @@
   <!-- MODULES -->
   <section class="section" id="modules">
     <div class="section-inner">
-      <div class="block">
+      <div class="block reveal">
         <h2>Мы предоставляем только<br>лучшие функции.</h2>
         <p class="section-sub">Постоянно растущий функционал с огромным количеством обходов</p>
         <div class="cards">
-          <div class="card">
+          <div class="card reveal" style="--delay:0ms">
             <span class="card-num">01</span>
             <h3>AttackAura</h3>
             <p>Быстрая и стабильная работа в PvP сценариях.</p>
           </div>
-          <div class="card">
+          <div class="card reveal" style="--delay:100ms">
             <span class="card-num">02</span>
             <h3>Speed</h3>
             <p>Ускорение с настройками для разных игровых ситуаций.</p>
           </div>
-          <div class="card">
+          <div class="card reveal" style="--delay:200ms">
             <span class="card-num">03</span>
             <h3>CrystalAura</h3>
             <p>Мощная кристальная аура с точным таймингом и обходами.</p>
@@ -78,21 +89,21 @@
   <!-- ADVANTAGES -->
   <section class="section" id="advantages">
     <div class="section-inner">
-      <div class="block">
+      <div class="block reveal">
         <h2>Преимущества.</h2>
         <p class="section-sub">Всё, что делает Baza DLC лучшим выбором на рынке.</p>
         <div class="cards">
-          <div class="card">
+          <div class="card reveal" style="--delay:0ms">
             <span class="card-num">01</span>
             <h3>Лучшие обходы на рынке</h3>
             <p>Постоянные обновления и поддержка актуальных режимов.</p>
           </div>
-          <div class="card">
+          <div class="card reveal" style="--delay:100ms">
             <span class="card-num">02</span>
             <h3>Гибкая настройка</h3>
             <p>Большое количество параметров под ваш стиль игры.</p>
           </div>
-          <div class="card">
+          <div class="card reveal" style="--delay:200ms">
             <span class="card-num">03</span>
             <h3>Удобный интерфейс</h3>
             <p>Минималистичный дизайн и быстрый доступ к модулям.</p>
@@ -105,53 +116,68 @@
   <!-- PRICING -->
   <section class="section" id="pricing">
     <div class="section-inner">
-      <div class="block">
+      <div class="block reveal">
         <h2>Цены.</h2>
         <p class="section-sub">Выберите подходящий план</p>
         <div class="pricing-grid">
-          <div class="price-card">
+
+          <div class="price-card reveal" style="--delay:0ms">
             <div class="price-label">7 дней</div>
             <div class="price-sublabel">Неделя</div>
-            <div class="price-amount">⭐ 15</div>
+            <div class="price-amount">
+              <svg class="tg-star" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#FFD700" stroke="#FFD700" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              15
+            </div>
             <ul class="price-features">
-              <li>✓ Все модули</li>
-              <li>✓ Обновления</li>
-              <li>✓ Поддержка</li>
+              <li>&#x2713; Все модули</li>
+              <li>&#x2713; Обновления</li>
+              <li>&#x2713; Поддержка</li>
+              <li>&#x2713; Ранний доступ</li>
             </ul>
-            <button class="btn-primary">Купить</button>
+            <button class="btn-primary" onclick="openBuyModal()">Купить</button>
           </div>
-          <div class="price-card price-card-featured">
+
+          <div class="price-card price-card-featured reveal" style="--delay:100ms">
             <div class="price-badge">Популярное</div>
             <div class="price-label">30 дней</div>
             <div class="price-sublabel">1 месяц</div>
-            <div class="price-amount">⭐ 40</div>
+            <div class="price-amount">
+              <svg class="tg-star" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#FFD700" stroke="#FFD700" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              40
+            </div>
             <ul class="price-features">
-              <li>✓ Все модули</li>
-              <li>✓ Обновления</li>
-              <li>✓ Поддержка</li>
-              <li>✓ Приоритет</li>
+              <li>&#x2713; Все модули</li>
+              <li>&#x2713; Обновления</li>
+              <li>&#x2713; Поддержка</li>
+              <li>&#x2713; Приоритет</li>
+              <li>&#x2713; Ранний доступ</li>
             </ul>
-            <button class="btn-primary">Купить</button>
+            <button class="btn-primary" onclick="openBuyModal()">Купить</button>
           </div>
-          <div class="price-card">
+
+          <div class="price-card reveal" style="--delay:200ms">
             <div class="price-label">Lifetime</div>
             <div class="price-sublabel">Навсегда</div>
-            <div class="price-amount">⭐ 100</div>
+            <div class="price-amount">
+              <svg class="tg-star" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#FFD700" stroke="#FFD700" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              100
+            </div>
             <ul class="price-features">
-              <li>✓ Все модули</li>
-              <li>✓ Обновления навсегда</li>
-              <li>✓ Поддержка навсегда</li>
-              <li>✓ Приоритет</li>
-              <li>✓ Ранний доступ</li>
+              <li>&#x2713; Все модули</li>
+              <li>&#x2713; Обновления навсегда</li>
+              <li>&#x2713; Поддержка</li>
+              <li>&#x2713; Приоритет</li>
+              <li>&#x2713; Ранний доступ</li>
             </ul>
-            <button class="btn-primary">Купить</button>
+            <button class="btn-primary" onclick="openBuyModal()">Купить</button>
           </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER / INFO -->
+  <!-- FOOTER -->
   <footer id="support">
     <div class="footer-inner">
       <div class="footer-logo">
@@ -159,18 +185,18 @@
         <span class="logo-text">Baza DLC</span>
       </div>
       <div class="footer-info">
-        <p>Minecraft 1.21.4 · Fabric · Бесплатный клиент</p>
+        <p>Minecraft 1.21.4 &middot; Fabric</p>
         <p>Авторы: baza2000ultrapro, Canya_drova</p>
-        <p>Версия: 1.0.0</p>
+        <p>Версия: 0.1 Бета</p>
       </div>
       <div class="footer-links">
         <a href="#modules">Модули</a>
         <a href="#pricing">Цены</a>
-        <a href="#support">Поддержка</a>
+        <a href="https://t.me/Baza2000ultrapro" target="_blank">Поддержка</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Baza DLC. Все права защищены.</p>
+      <p>&copy; 2025 Baza DLC. Все права защищены.</p>
     </div>
   </footer>
 
@@ -181,9 +207,31 @@
     function closeModal() {
       document.getElementById('loginModal').classList.remove('active');
     }
+    function openBuyModal() {
+      document.getElementById('buyModal').classList.add('active');
+    }
+    function closeBuyModal() {
+      document.getElementById('buyModal').classList.remove('active');
+    }
     document.getElementById('loginModal').addEventListener('click', function(e) {
       if (e.target === this) closeModal();
     });
+    document.getElementById('buyModal').addEventListener('click', function(e) {
+      if (e.target === this) closeBuyModal();
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const delay = e.target.style.getPropertyValue('--delay') || '0ms';
+          setTimeout(() => e.target.classList.add('visible'), parseInt(delay));
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 
 </body>
