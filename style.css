@@ -22,12 +22,10 @@ body {
   overflow-x: hidden;
 }
 
-/* GLASS */
+/* GLASS — no backdrop-filter on cards to avoid lag */
 .glass {
-  background: var(--glass-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--glass-border);
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.09);
 }
 
 /* MODAL */
@@ -35,8 +33,7 @@ body {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.6);
-  backdrop-filter: blur(6px);
+  background: rgba(0,0,0,.75);
   z-index: 999;
   align-items: center;
   justify-content: center;
@@ -49,7 +46,8 @@ body {
   max-width: 380px;
   position: relative;
   text-align: center;
-  border-color: var(--glass-border);
+  background: #13131f;
+  border: 1px solid rgba(255,255,255,.1);
 }
 .modal h2 { color: var(--white); font-size: 1.5rem; margin-bottom: 6px; }
 .modal-sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 24px; }
@@ -85,10 +83,8 @@ nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(11, 11, 20, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--glass-border);
+  background: rgba(11, 11, 20, 0.92);
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .nav-inner {
   max-width: 1100px;
@@ -107,7 +103,7 @@ nav {
   font-size: 1rem;
   color: var(--white);
 }
-.logo-icon { color: var(--accent); font-size: 1.2rem; }
+.logo-icon { color: var(--accent); font-size: 1rem; font-weight: 800; letter-spacing: -2px; }
 .nav-links {
   display: flex;
   gap: 28px;
@@ -189,15 +185,13 @@ nav {
 .btn-ghost:hover { border-color: var(--accent); color: var(--white); }
 
 /* SECTIONS */
-.section { padding: 60px 24px; }
+.section { padding: 40px 24px; }
 .section-inner { max-width: 1100px; margin: 0 auto; }
 
 /* GLASS BLOCK — wraps heading + cards */
 .glass-block {
-  background: rgba(255,255,255,.025);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
   border-radius: 24px;
   padding: 52px 40px 48px;
 }
@@ -225,16 +219,15 @@ nav {
 .card {
   border-radius: 14px;
   padding: 26px 22px;
-  transition: border-color .2s, transform .2s;
-  border-color: var(--glass-border);
+  transition: border-color .2s;
+  border-color: rgba(255,255,255,.09);
 }
 .card:hover {
-  border-color: rgba(124,92,252,.4);
-  transform: translateY(-2px);
+  border-color: rgba(124,92,252,.35);
 }
 .card-highlight {
-  border-color: rgba(124,92,252,.5) !important;
-  background: rgba(124,92,252,.08) !important;
+  border-color: rgba(124,92,252,.4) !important;
+  background: rgba(124,92,252,.06) !important;
 }
 .card-num {
   font-size: 0.72rem;
