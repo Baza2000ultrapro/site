@@ -1,22 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Мой первый сайт</title>
-    <meta charset="utf-8">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        h1 { font-size: 3em; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baza DLC</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>🚀 Привет, мир!</h1>
-    <p>Мой первый сайт на Render.com</p>
-    <button onclick="alert('Кнопка работает!')">Нажми на меня</button>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Baza DLC</span>
+      </div>
+      <div class="nav-links">
+        <a href="#modules">Модули</a>
+        <a href="#pricing">Цены</a>
+        <a href="#support">Поддержка</a>
+      </div>
+      <button class="btn-login">Войти ↗</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1><span class="accent">Baza DLC</span> — выбор победителей</h1>
+      <p>Мощный клиент для уверенной игры и стабильного результата на серверах Minecraft.</p>
+      <div class="hero-btns">
+        <button class="btn-primary">Войти ↗</button>
+        <button class="btn-ghost" id="support">Поддержка</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES -->
+  <section class="section" id="modules">
+    <div class="section-inner">
+      <h2>Мы предоставляем только<br>лучшие функции.</h2>
+      <p class="section-sub">Постоянно растущий функционал с огромным количеством обходов</p>
+      <div class="cards">
+        <div class="card">
+          <span class="card-num">01</span>
+          <h3>AttackAura</h3>
+          <p>Быстрая и стабильная работа в PvP сценариях.</p>
+        </div>
+        <div class="card">
+          <span class="card-num">02</span>
+          <h3>Speed</h3>
+          <p>Ускорение с настройками для разных игровых ситуаций.</p>
+        </div>
+        <div class="card card-highlight">
+          <span class="card-num">03</span>
+          <h3>CrystalAura</h3>
+          <p>Лучший из лучших, выполняет свою работу очень быстро и отлично.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="section section-dark">
+    <div class="section-inner">
+      <h2>Преимущества.</h2>
+      <p class="section-sub">Всё, что делает Baza DLC лучшим выбором на рынке.</p>
+      <div class="cards">
+        <div class="card">
+          <span class="card-num">01</span>
+          <h3>Лучшие обходы на рынке</h3>
+          <p>Постоянные обновления и поддержка актуальных режимов.</p>
+        </div>
+        <div class="card">
+          <span class="card-num">02</span>
+          <h3>Гибкая настройка</h3>
+          <p>Большое количество параметров под ваш стиль игры.</p>
+        </div>
+        <div class="card card-highlight">
+          <span class="card-num">03</span>
+          <h3>Удобный интерфейс</h3>
+          <p>Чистая структура и быстрый доступ к нужным действиям.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL MODULES LIST -->
+  <section class="section" id="all-modules">
+    <div class="section-inner">
+      <h2>Все модули.</h2>
+      <p class="section-sub">Полный список возможностей клиента</p>
+      <div class="modules-grid">
+        <div class="module-group">
+          <h4>⚔ Combat</h4>
+          <ul>
+            <li>AttackAura</li><li>AimHelper</li><li>AntiBot</li>
+            <li>AutoArmor</li><li>AutoClicker</li><li>AutoExplosion</li>
+            <li>AutoPotion</li><li>AutoSwap</li><li>AutoTotem</li>
+            <li>Criticals</li><li>CrystalAura</li><li>CrystalSpammer</li>
+            <li>ElytraTarget</li><li>HitBox</li><li>MaceAura</li>
+            <li>NoFriendDamage</li><li>TPAura</li><li>TriggerBot</li>
+            <li>Velocity</li>
+          </ul>
+        </div>
+        <div class="module-group">
+          <h4>🏃 Movement</h4>
+          <ul>
+            <li>AirStuck</li><li>Blink</li><li>DogFly</li>
+            <li>ElytraBooster</li><li>ElytraFlight</li><li>ElytraMotion</li>
+            <li>Flight</li><li>GuiMove</li><li>HighJump</li>
+            <li>NoJumpDelay</li><li>NoSlow</li><li>NoWeb</li>
+            <li>Speed</li><li>Sprint</li><li>Strafe</li>
+            <li>TargetStrafe</li>
+          </ul>
+        </div>
+        <div class="module-group">
+          <h4>🎨 Render</h4>
+          <ul>
+            <li>Ambience</li><li>AntiInvisible</li><li>Arrows</li>
+            <li>AspectRatio</li><li>BlockEsp</li><li>BlockOverlay</li>
+            <li>Chams</li><li>ChinaHat</li><li>ClickGui</li>
+            <li>ClientSounds</li><li>Crosshair</li><li>ESP</li>
+            <li>FireFly</li><li>FreeLook</li><li>FullBright</li>
+            <li>KillEffect</li><li>NoRender</li><li>Predictions</li>
+            <li>SoulESP</li><li>SwingAnimations</li><li>Tags</li>
+            <li>TargetESP</li><li>Tracers</li><li>Trails</li>
+            <li>ViewModel</li><li>WardenTime</li>
+          </ul>
+        </div>
+        <div class="module-group">
+          <h4>🔧 Misc</h4>
+          <ul>
+            <li>AntiAFK</li><li>AutoBuy</li><li>CrystalOptimizer</li>
+            <li>DiscordRPC</li><li>FunTimeHelper</li><li>LonyHelper</li>
+            <li>Optimization</li><li>Protected</li><li>RWHelper</li>
+            <li>ScoreboardHealth</li><li>SunriseHelper</li><li>UseTracker</li>
+            <li>WellHelper</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section-dark" id="pricing">
+    <div class="section-inner">
+      <h2>Цены.</h2>
+      <p class="section-sub">Выберите подходящий план</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-label">7 дней</div>
+          <div class="price-sublabel">Неделя</div>
+          <div class="price-amount">149 ₽</div>
+          <ul class="price-features">
+            <li>✓ Все модули</li>
+            <li>✓ Обновления</li>
+            <li>✓ Поддержка</li>
+          </ul>
+          <button class="btn-primary">Купить</button>
+        </div>
+        <div class="price-card price-card-featured">
+          <div class="price-badge">Популярное</div>
+          <div class="price-label">30 дней</div>
+          <div class="price-sublabel">1 месяц</div>
+          <div class="price-amount">399 ₽</div>
+          <ul class="price-features">
+            <li>✓ Все модули</li>
+            <li>✓ Обновления</li>
+            <li>✓ Поддержка</li>
+            <li>✓ Приоритет</li>
+          </ul>
+          <button class="btn-primary">Купить</button>
+        </div>
+        <div class="price-card">
+          <div class="price-label">Lifetime</div>
+          <div class="price-sublabel">Навсегда</div>
+          <div class="price-amount">999 ₽</div>
+          <ul class="price-features">
+            <li>✓ Все модули</li>
+            <li>✓ Обновления навсегда</li>
+            <li>✓ Поддержка навсегда</li>
+            <li>✓ Приоритет</li>
+            <li>✓ Ранний доступ</li>
+          </ul>
+          <button class="btn-primary">Купить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / INFO -->
+  <footer id="info">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">Baza DLC</span>
+      </div>
+      <div class="footer-info">
+        <p>Minecraft 1.21.4 · Fabric · Бесплатный клиент</p>
+        <p>Авторы: baza2000ultrapro, Canya_drova</p>
+        <p>Версия: 1.0.0</p>
+      </div>
+      <div class="footer-links">
+        <a href="#modules">Модули</a>
+        <a href="#pricing">Цены</a>
+        <a href="#support">Поддержка</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Baza DLC. Все права защищены.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
